@@ -53,6 +53,10 @@ export class ProductImageModuleComponent implements OnInit {
         {
             this.getKarigarImge();
         }
+        if( this.part_data.mode == 'profile_img' )
+        {
+            this.part_data.id = this.part_data.id
+        }
         if( this.part_data.mode == 'test6' )
         {
             this.getKarigarDocument();

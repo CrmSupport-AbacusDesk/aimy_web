@@ -37,13 +37,13 @@
                                                 <div class="right-cont">
                                                     <p>Company Name</p>
                                                     <span>{{getData.company_name}}</span>
-                                                </div>
+                                                </div>z
                                             </figure>
                                         </li>
                                         <li>
                                             <figure>
                                                 <div class="left-img zoom-cursor">
-                                                    <img [src]="getData.profile" (click)="openDialog( getData.id,'test5')" >
+                                                    <img [src]="uploadUrl+getData.profile" (click)="openDialog( getData.profile,'profile_img')" >
                                                 </div>
                                                 <div class="right-cont">
                                                     <p>Name</p>
