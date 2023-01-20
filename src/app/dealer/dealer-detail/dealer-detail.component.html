@@ -43,7 +43,7 @@
                                         <li>
                                             <figure>
                                                 <div class="left-img zoom-cursor">
-                                                    <img [src]="uploadUrl+getData.profile" (click)="openDialog( getData.profile,'profile_img')" >
+                                                    <img [src]="uploadUrl+getData.profile" (click)="getData.profile != '' && openDialog( getData.profile,'profile_img')" >
                                                 </div>
                                                 <div class="right-cont">
                                                     <p>Name</p>

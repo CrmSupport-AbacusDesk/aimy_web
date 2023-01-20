@@ -82,14 +82,16 @@
 
 
         <div class="gift-box product-img " *ngIf=" part_data.mode == 'profile_img'">  
-            <div class="form-area dwn_rl">
+            <div class="form-area dwn_rl" *ngIf="part_data.id">
                 <img [src]="uploadUrl+part_data.id">
-                <a href="{{uploadUrl+part_data.id}}" download target="_blank" ><i class="material-icons ico_dwn">get_app</i></a>
+                <a href="{{uploadUrl+part_data.id}}" download   target="_blank" ><i class="material-icons ico_dwn">get_app</i></a>
             </div>
-            <button mat-button [mat-dialog-close]="false" ><i class="material-icons ">clear</i></button>
+            <button mat-button [mat-dialog-close]="false" ><i class="material-icons"   >clear</i></button>
         </div>
 
+        <!-- [disabled]="uploadUrl+part_data.id == '' " -->
 
+        <!-- *ngIf="part_data.mode != ''  -->
         
         <div class="product-img " *ngIf=" part_data.mode == 'test5'">  
             <div class="btn-group">
