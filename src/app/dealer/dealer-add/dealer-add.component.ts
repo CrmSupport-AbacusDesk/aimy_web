@@ -133,7 +133,7 @@ export class DealerAddComponent implements OnInit {
   {
       this.savingData = true;
       this.loading_list = true;
-      this.karigarform.dob = this.karigarform.dob  ? this.db.pickerFormat(this.karigarform.dob) : '';
+    //   this.karigarform.dob = this.karigarform.dob  ? this.db.pickerFormat(this.karigarform.dob) : '';
       this.karigarform.created_by = this.db.datauser.id;
       if(this.karigar_id)
       {
