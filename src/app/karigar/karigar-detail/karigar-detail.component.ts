@@ -256,6 +256,10 @@ export class KarigarDetailComponent implements OnInit {
         this.step--;
     }
     openDialog(id ,string ) {
+        console.log(id);
+        console.log(string);
+
+        
         const dialogRef = this.alrt.open(ProductImageModuleComponent,{
             data: {
                 'id' : id,

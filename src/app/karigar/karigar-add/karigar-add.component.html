@@ -31,13 +31,25 @@
                                     </div>
                                 </div>
                                 <div class="col s3">
+
+
+
                                     <div class="control-field">
                                         <mat-form-field class="cs-input">
-                                            <input placeholder="D.O.B (Optional)" class="h46" [(ngModel)]="karigarform.dob" (click)="openDatePicker(picker)" [max]="date1" name="dob" matInput  [matDatepicker]="picker"  readonly>
+                                            <input placeholder="D.O.B (Optional)" class="h46" [(ngModel)]="karigarform.dob" (click)="openDatePicker(picker)" [max]="date1" name="dob" matInput  [matDatepicker]="picker" >
                                             <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
                                             <mat-datepicker #picker></mat-datepicker>
                                         </mat-form-field>  
                                     </div>
+
+
+                                    <!-- <div class="control-field">
+                                        <mat-form-field class="cs-input">
+                                            <input placeholder="D.O.B (Optional)" class="h46" [(ngModel)]="karigarform.dob" (click)="openDatePicker(picker)" [max]="date1" name="dob" matInput  [matDatepicker]="picker"  >
+                                            <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
+                                            <mat-datepicker #picker></mat-datepicker>
+                                        </mat-form-field>  
+                                    </div> -->
                                 </div>
                                 <div class="col s3">
                                     <div class="control-field">
@@ -220,7 +232,7 @@
                                 <div class="col s12">
                                     <div class="control-field">
                                         <mat-form-field class="cs-input">
-                                            <input matInput placeholder="Counter Name" name="dealer_counter_name" [(ngModel)] = "karigarform.dealer_counter_name" #dealer_counter_name="ngModel" >
+                                            <input matInput placeholder="Counter Name" name="parent_counter_name" [(ngModel)] = "karigarform.parent_counter_name" #parent_counter_name="ngModel" >
                                         </mat-form-field>  
                                     </div>
                                 </div>
@@ -229,14 +241,14 @@
                                 <div class="col s6">
                                     <div class="control-field">
                                         <mat-form-field class="cs-input">
-                                            <input matInput placeholder="Contact Person" name="dealer_contact_person" [(ngModel)] = "karigarform.dealer_contact_person" #dealer_contact_person="ngModel" >
+                                            <input matInput placeholder="Contact Person" name="parent_counter_contact_person" [(ngModel)] = "karigarform.parent_counter_contact_person" #parent_counter_contact_person="ngModel" >
                                         </mat-form-field>  
                                     </div>
                                 </div>
                                 <div class="col s6">
                                     <div class="control-field">
                                         <mat-form-field class="cs-input">
-                                            <input matInput placeholder="Mobile No." name="dealer_mobile" [(ngModel)] = "karigarform.dealer_mobile" #dealer_mobile="ngModel"  maxlength="10" minlength="10" (keypress)="numeric_Number($event)" >
+                                            <input matInput placeholder="Mobile No." name="parent_counter_mobile" [(ngModel)] = "karigarform.parent_counter_mobile" #parent_counter_mobile="ngModel"  maxlength="10" minlength="10" (keypress)="numeric_Number($event)" >
                                         </mat-form-field>  
                                     </div>
                                 </div>

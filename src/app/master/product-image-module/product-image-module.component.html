@@ -69,6 +69,29 @@
             </div> -->
            
         </div>
+        <!-- <div class="product-img " *ngIf=" part_data.mode == 'profile_img'">  
+            <div class="btn-group">
+                <button mat-icon-button [mat-dialog-close]="false" >
+                    <mat-icon aria-label="Example icon-button with a heart icon">clear</mat-icon>
+                </button>
+            </div>
+            <div class="form-area">
+                <img [src]="uploadUrl+part_data.id">
+            </div>
+        </div> -->
+
+
+        <div class="gift-box product-img " *ngIf=" part_data.mode == 'profile_img'">  
+            <div class="form-area dwn_rl" *ngIf="part_data.id">
+                <img [src]="uploadUrl+part_data.id">
+                <a href="{{uploadUrl+part_data.id}}" download   target="_blank" ><i class="material-icons ico_dwn">get_app</i></a>
+            </div>
+            <button mat-button [mat-dialog-close]="false" ><i class="material-icons"   >clear</i></button>
+        </div>
+
+        <!-- [disabled]="uploadUrl+part_data.id == '' " -->
+
+        <!-- *ngIf="part_data.mode != ''  -->
         
         <div class="product-img " *ngIf=" part_data.mode == 'test5'">  
             <div class="btn-group">
@@ -82,7 +105,7 @@
            
         </div>
         
-        <div class="product-img " *ngIf=" part_data.mode == 'test6'">  
+        <!-- <div class="product-img " *ngIf=" part_data.mode == 'test6'">  
             <div class="btn-group">
                 <button mat-icon-button [mat-dialog-close]="false" >
                     <mat-icon aria-label="Example icon-button with a heart icon">clear</mat-icon>
@@ -92,7 +115,16 @@
                 <img [src]="uploadUrl+documentImage.document_image">
             </div>
            
+        </div> -->
+
+        <div class="gift-box product-img " *ngIf=" part_data.mode == 'test6'">  
+            <div class="form-area dwn_rl">
+                <img [src]="uploadUrl+documentImage.document_image">
+                <a href="{{uploadUrl+documentImage.document_image}}" download target="_blank" ><i class="material-icons ico_dwn">get_app</i></a>
+            </div>
+            <button mat-button [mat-dialog-close]="false" ><i class="material-icons ">clear</i></button>
         </div>
+
 
         <div class="product-img " *ngIf=" part_data.mode == 'test9'">  
             <div class="btn-group">
