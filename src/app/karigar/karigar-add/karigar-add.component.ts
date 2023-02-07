@@ -33,7 +33,7 @@ export class KarigarAddComponent implements OnInit {
             this.docId = params['karigar_id'];
             
             if (this.karigar_id)
-            {
+            { 
                 this.getKarigarDetails();
             }
             this.getStateList();
@@ -57,6 +57,9 @@ export class KarigarAddComponent implements OnInit {
             this.loading_list = false;
             console.log(d);
             this.karigarform = d.karigar;
+            if(this.karigarform.doa == '0000-00-00'){
+                this.karigarform.doa = '';
+            }
             console.log( this.karigarform);
             this.getDistrictList(1);
             this.getCityList(1);
@@ -133,10 +136,8 @@ export class KarigarAddComponent implements OnInit {
     {
         this.savingData = true;
         this.loading_list = true;
-        // this.karigarform.dob = this.karigarform.dob  ? this.db.pickerFormat(this.karigarform.dob) : '';
+        this.karigarform.dob = this.karigarform.dob  ? this.db.pickerFormat(this.karigarform.dob) : '';
 
-
-        // this.karigarform.dob = this.karigarform.dob  ? this.db.pickerFormat(this.karigarform.dob) : '';
 
         this.karigarform.created_by = this.db.datauser.id;
         if(this.karigar_id)
