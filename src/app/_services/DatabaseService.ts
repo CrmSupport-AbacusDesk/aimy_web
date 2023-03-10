@@ -18,13 +18,13 @@
     export class DatabaseService implements OnInit {
 
 // live url
-myurl = 'https://apps.abacusdesk.com/aimyluminaries/dd_api/';
-uploadUrl = "https://apps.abacusdesk.com/aimyluminaries/dd_api/app/uploads/";
+// myurl = 'https://apps.abacusdesk.com/aimyluminaries/dd_api/';
+// uploadUrl = "https://apps.abacusdesk.com/aimyluminaries/dd_api/app/uploads/";
 
         // testing url
         
-        // myurl = 'https://devcrm.abacusdesk.com/aimyluminaries/dd_api/';
-        // uploadUrl = "https://devcrm.abacusdesk.com/aimyluminaries/dd_api/app/uploads/";
+        myurl = 'https://devcrm.abacusdesk.com/aimyluminaries/dd_api/';
+        uploadUrl = "https://devcrm.abacusdesk.com/aimyluminaries/dd_api/app/uploads/";
         
         // local
         // myurl = 'http://localhost/advance_api/';

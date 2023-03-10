@@ -74,7 +74,14 @@
                             <div class="col s3">
                                 <div class="control-field">
                                     <mat-form-field class="cs-input">
-                                        <input matInput placeholder="Cash Redemtion Limit" (keypress)="number($event)" name="cash_redemption_limit" [(ngModel)]="refer.cash_redemption_limit">
+                                        <input matInput placeholder="Electrician Cash Redemtion Limit" (keypress)="number($event)" name="cash_redemption_limit" [(ngModel)]="refer.cash_redemption_limit">
+                                    </mat-form-field>  
+                                </div>
+                            </div>
+                            <div class="col s3">
+                                <div class="control-field">
+                                    <mat-form-field class="cs-input">
+                                        <input matInput placeholder="Dealer Cash Redemtion Limit" (keypress)="number($event)" name="cash_redemption_limit_dealer" [(ngModel)]="refer.cash_redemption_limit_dealer">
                                     </mat-form-field>  
                                 </div>
                             </div>
